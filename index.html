@@ -1,36 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Your Name - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Your Name - Full Stack Developer specializing in modern web technologies">
+    <meta name="keywords" content="full stack developer, web developer, react, node.js, javascript, portfolio">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Your Name - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing modern web development projects and skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Name - Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing modern web development projects and skills">
+    <meta name="twitter:image" content="https://yourwebsite.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Your Name</a>
+                <a href="#home">
+                    <i class="fas fa-code"></i>
+                    Your Name
+                </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        About
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-tools"></i>
+                        Skills
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-folder-open"></i>
+                        Projects
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
                 </li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
@@ -39,8 +88,8 @@
                 <span class="bar"></span>
             </div>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                <span class="sun">☀️</span>
-                <span class="moon">🌙</span>
+                <i class="fas fa-sun sun"></i>
+                <i class="fas fa-moon moon"></i>
             </button>
         </div>
     </nav>
@@ -49,36 +98,44 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-circle" style="color: #10b981; font-size: 0.5rem;"></i>
+                    Available for work
+                </div>
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <h2 class="hero-subtitle">Full Stack Developer</h2>
-                <p class="hero-description">I create beautiful, responsive web applications with modern technologies and clean code.</p>
+                <h2 class="hero-subtitle">
+                    <i class="fas fa-laptop-code"></i>
+                    Full Stack Developer
+                </h2>
+                <p class="hero-description">I create beautiful, responsive web applications with modern technologies and clean code. Let's build something amazing together! 🚀</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#" class="btn btn-secondary" id="download-resume">Download Resume</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="download-resume">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
+                    <a href="https://linkedin.com/in/yourname" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#" class="social-link" aria-label="GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
+                    <a href="https://github.com/yourname" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.568L12 12.772l9.796-8.95h.568A1.636 1.636 0 0 1 24 5.456z"/>
-                        </svg>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/yourname" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
                 <div class="scroll-cue">
                     <span>Scroll to explore</span>
                     <div class="scroll-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 13L12 18L17 13M7 6L12 11L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
@@ -88,15 +145,46 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i>
+                About Me
+            </h2>
             <div class="about-content">
                 <div class="about-image">
                     <img src="https://via.placeholder.com/300x300/6366f1/ffffff?text=Your+Photo" alt="Your Name" class="profile-img">
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>3+ Years</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-coffee"></i>
+                            <span>Coffee Lover</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
-                    <p>I'm a passionate full-stack developer with 3+ years of experience creating web applications that make a difference. I love turning complex problems into simple, beautiful designs.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while reading about the latest in tech.</p>
-                    <p>I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful.</p>
+                    <p>👋 I'm a passionate full-stack developer with 3+ years of experience creating web applications that make a difference. I love turning complex problems into simple, beautiful designs.</p>
+                    <p>🌟 When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while reading about the latest in tech.</p>
+                    <p>💡 I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Player</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solver</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,39 +193,105 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">
+                <i class="fas fa-tools"></i>
+                Skills & Technologies
+            </h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Frontend</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Vue.js</span>
-                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            HTML5
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            CSS3
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            JavaScript
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-react"></i>
+                            React
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            Vue.js
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            TypeScript
+                        </span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Express</span>
-                        <span class="skill-item">Django</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            Node.js
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-python"></i>
+                            Python
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-code"></i>
+                            Express
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-python"></i>
+                            Django
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-database"></i>
+                            PostgreSQL
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            MongoDB
+                        </span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Tools & Others</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">GraphQL</span>
+                        <span class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            Git
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            Docker
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            AWS
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            Figma
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-plug"></i>
+                            REST APIs
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            GraphQL
+                        </span>
                     </div>
                 </div>
             </div>
@@ -147,61 +301,148 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">
+                <i class="fas fa-folder-open"></i>
+                Featured Projects
+            </h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/6366f1/ffffff?text=Project+1" alt="Project 1">
+                        <img src="https://via.placeholder.com/400x250/6366f1/ffffff?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">
+                            <i class="fas fa-shopping-cart"></i>
+                            E-Commerce Platform
+                        </h3>
                         <p class="project-description">A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment integration, and admin dashboard.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">
+                                <i class="fab fa-react"></i>
+                                React
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fab fa-node-js"></i>
+                                Node.js
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fas fa-database"></i>
+                                PostgreSQL
+                            </span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-small btn-secondary">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Project+2" alt="Project 2">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Task+Manager" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
+                        <h3 class="project-title">
+                            <i class="fas fa-tasks"></i>
+                            Task Management App
+                        </h3>
                         <p class="project-description">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">
+                                <i class="fab fa-vuejs"></i>
+                                Vue.js
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fas fa-plug"></i>
+                                Socket.io
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fas fa-leaf"></i>
+                                MongoDB
+                            </span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-small btn-secondary">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Project+3" alt="Project 3">
+                        <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Weather+Dashboard" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
+                        <h3 class="project-title">
+                            <i class="fas fa-cloud-sun"></i>
+                            Weather Dashboard
+                        </h3>
                         <p class="project-description">A responsive weather dashboard that displays current weather and forecasts for multiple cities with beautiful data visualizations.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Chart.js</span>
-                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">
+                                <i class="fab fa-js-square"></i>
+                                JavaScript
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fas fa-chart-bar"></i>
+                                Chart.js
+                            </span>
+                            <span class="tech-tag">
+                                <i class="fas fa-plug"></i>
+                                Weather API
+                            </span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-small btn-secondary">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -212,34 +453,67 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">
+                <i class="fas fa-paper-plane"></i>
+                Get In Touch
+            </h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's work together</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <h3>
+                        <i class="fas fa-handshake"></i>
+                        Let's work together
+                    </h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out! 💬</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <strong>Email:</strong> your.email@example.com
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <strong>Location:</strong> Your City, Country
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location:</strong>
+                                <span>Your City, Country</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">
+                            <i class="fas fa-user"></i>
+                            Name
+                        </label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">
+                            <i class="fas fa-comment"></i>
+                            Message
+                        </label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -248,7 +522,35 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Your Name
+                    </h3>
+                    <p>Building the future, one line of code at a time. ✨</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/yourname" class="footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/yourname" class="footer-social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="footer-social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/yourname" class="footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <i class="fas fa-heart" style="color: #ef4444;"></i>
+                    Made with love by Your Name • © 2024 All rights reserved
+                </p>
+            </div>
         </div>
     </footer>
 

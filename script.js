@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize scroll progress indicator
-    const scrollProgress = document.querySelector('.scroll-progress');
+    const scrollProgress = document.querySelector('.scroll-progress') || createScrollProgress();
     
     function updateScrollProgress() {
         const scrollTop = window.pageYOffset;
@@ -138,6 +138,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 16);
 
     window.addEventListener('scroll', throttledScrollHandler);
+
+    // Add form field animations
+    const formInputs = document.querySelectorAll('input, textarea');
+    formInputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentElement.classList.remove('focused');
+            }
+        });
+    });
 
     // Enhanced Contact Form Handling
     const contactForm = document.getElementById('contact-form');
@@ -438,6 +452,30 @@ document.addEventListener('DOMContentLoaded', function() {
             opacity: 1;
         }
         
+        .form-group.focused label {
+            transform: translateY(-25px) scale(0.9);
+            color: var(--primary-color);
+        }
+        
+        .form-group label {
+            position: absolute;
+            top: 1.25rem;
+            left: 1.25rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-primary);
+            padding: 0 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .form-group {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
         .spinner {
             width: 16px;
             height: 16px;
@@ -457,6 +495,15 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Enhanced portfolio website loaded successfully!');
     console.log('💡 Pro tip: Press "D" to toggle dark mode, "Escape" to close menus!');
 });
+
+// Create scroll progress indicator if it doesn't exist
+function createScrollProgress() {
+    const indicator = document.createElement('div');
+    indicator.className = 'scroll-indicator';
+    indicator.innerHTML = '<div class="scroll-progress"></div>';
+    document.body.prepend(indicator);
+    return indicator.querySelector('.scroll-progress');
+}
 
 // Enhanced utility functions
 function throttle(func, limit) {
