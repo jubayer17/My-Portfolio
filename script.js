@@ -409,6 +409,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.transition = 'opacity 0.5s ease';
         document.body.style.opacity = '1';
         
+        // Trigger text animations
+        setTimeout(() => {
+            const animatedTexts = document.querySelectorAll('.animate-text');
+            animatedTexts.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animationPlayState = 'running';
+                }, index * 200);
+            });
+        }, 300);
+        
         // Trigger initial animations
         setTimeout(() => {
             const heroElements = document.querySelectorAll('.hero-badge, .hero-title, .hero-subtitle, .hero-description, .hero-buttons, .social-links, .scroll-cue');
