@@ -6,41 +6,24 @@ Welcome to the source code of my **personal portfolio website**, crafted with �
 
 ## 🚀 Live Preview
 
-🔗 [jubayer.vercel.app](https://jubayer.vercel.app)
+🔗 [CLICK HERE 🍂](https://my-portfolio-eight-omega-98.vercel.app/)
 
 ---
 
 ## 🛠️ Built With
 
-- ✅ HTML5
-- ✅ CSS3
-- ✅ JavaScript (ES6)
-- ✅ Responsive Design Principles
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Responsive Design Principles
 
 ---
 
 ## 📌 Features
 
-- 🧑‍💻 Developer Introduction
-- 🛠️ Projects Showcase
-- 📈 Skill Highlights
-- ✉️ Contact Form
-- 🌙 Light/Dark Mode _(if available)_
-- 📱 Fully Responsive Design
-
----
-
-## 📁 Folder Structure
-
-```bash
-├── index.html
-├── /assets
-│   ├── ss.png
-│   ├── images/
-│   └── icons/
-├── /css
-│   └── style.css
-├── /js
-│   └── script.js
-├── README.md
-```
+- Developer Introduction
+- Projects Showcase
+- Skill Highlights
+- Contact Form
+- Light/Dark Mode
+- Fully Responsive Design
