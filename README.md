@@ -30,12 +30,6 @@ Welcome to the source code of my **personal portfolio website**, crafted with �
 
 ---
 
-## 📷 Full Preview
-
-![Portfolio Full Preview](./assets/ss.png)
-
----
-
 ## 📁 Folder Structure
 
 ```bash
