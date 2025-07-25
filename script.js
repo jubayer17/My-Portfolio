@@ -219,21 +219,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
   });
 
-  // Enhanced Download Resume functionality
   const downloadResumeBtn = document.getElementById("download-resume");
+
   downloadResumeBtn.addEventListener("click", function (e) {
     e.preventDefault();
 
-    showNotification(
-      "📄 Resume download will be available soon! Check back later.",
-      "info"
-    );
+    const fileUrl = "./assets/mycvvvv.pdf";
 
-    // Example of how you might handle actual file download:
-    // const link = document.createElement('a');
-    // link.href = 'assets/Your_Name_Resume.pdf';
-    // link.download = 'Your_Name_Resume.pdf';
-    // link.click();
+    // 1. Open in new tab
+    window.open(fileUrl, "_blank");
+
+    // 2. Trigger download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "My_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    showNotification("📄 Resume is opening and downloading...", "success");
   });
 
   // Enhanced scroll animations with Intersection Observer
