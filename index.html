@@ -69,54 +69,60 @@
   </head>
 
   <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-progress"></div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <!-- Navigation -->
+    <nav class="navbar animate-on-scroll" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <a href="#home">
+          <a href="#home" class="hover-scale magnetic">
             <i class="fas fa-code"></i>
-            JA
+            Jubayer
           </a>
         </div>
         <ul class="nav-menu" id="nav-menu">
           <li class="nav-item">
-            <a href="#home" class="nav-link">
+            <a href="#home" class="nav-link hover-lift">
               <i class="fas fa-home"></i>
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">
+            <a href="#about" class="nav-link hover-lift">
               <i class="fas fa-user"></i>
               About
             </a>
           </li>
           <li class="nav-item">
-            <a href="#skills" class="nav-link">
+            <a href="#skills" class="nav-link hover-lift">
               <i class="fas fa-tools"></i>
               Skills
             </a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">
+            <a href="#projects" class="nav-link hover-lift">
               <i class="fas fa-folder-open"></i>
               Projects
             </a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">
+            <a href="#contact" class="nav-link hover-lift">
               <i class="fas fa-envelope"></i>
               Contact
             </a>
           </li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu">
+        <div class="nav-toggle hover-scale" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <button
-          class="theme-toggle"
+          class="theme-toggle hover-scale magnetic"
           id="theme-toggle"
           aria-label="Toggle dark mode"
         >
@@ -128,21 +134,79 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <div class="parallax-bg"></div>
+
+      <!-- Tech Background Animation -->
+      <div class="tech-bg-animation">
+        <!-- Floating Code Particles -->
+        <div class="code-particles">
+          <i class="fab fa-react code-particle"></i>
+          <i class="fab fa-js-square code-particle"></i>
+          <i class="fab fa-node-js code-particle"></i>
+          <i class="fab fa-html5 code-particle"></i>
+          <i class="fab fa-css3-alt code-particle"></i>
+          <i class="fab fa-python code-particle"></i>
+          <i class="fab fa-java code-particle"></i>
+          <i class="fab fa-php code-particle"></i>
+          <i class="fab fa-angular code-particle"></i>
+          <i class="fab fa-vuejs code-particle"></i>
+          <i class="fab fa-laravel code-particle"></i>
+          <i class="fab fa-bootstrap code-particle"></i>
+          <i class="fab fa-sass code-particle"></i>
+          <i class="fab fa-less code-particle"></i>
+          <i class="fab fa-git-alt code-particle"></i>
+          <i class="fab fa-github code-particle"></i>
+          <i class="fab fa-gitlab code-particle"></i>
+          <i class="fab fa-docker code-particle"></i>
+          <i class="fab fa-aws code-particle"></i>
+          <i class="fab fa-google-cloud code-particle"></i>
+          <i class="fab fa-microsoft code-particle"></i>
+        </div>
+
+        <!-- Geometric Grid -->
+        <div class="geometric-grid">
+          <div class="grid-line grid-line-1"></div>
+          <div class="grid-line grid-line-2"></div>
+          <div class="grid-line grid-line-3"></div>
+          <div class="grid-dot grid-dot-1"></div>
+          <div class="grid-dot grid-dot-2"></div>
+          <div class="grid-dot grid-dot-3"></div>
+          <div class="grid-dot grid-dot-4"></div>
+        </div>
+
+        <!-- Tech Icons -->
+        <div class="floating-icons">
+          <i class="fab fa-js-square tech-icon tech-icon-1"></i>
+          <i class="fab fa-react tech-icon tech-icon-2"></i>
+          <i class="fab fa-node-js tech-icon tech-icon-3"></i>
+          <i class="fas fa-database tech-icon tech-icon-4"></i>
+          <i class="fab fa-git-alt tech-icon tech-icon-5"></i>
+          <i class="fab fa-npm tech-icon tech-icon-6"></i>
+          <!-- Additional left side tech icons -->
+          <i class="fab fa-html5 tech-icon tech-icon-7"></i>
+          <i class="fab fa-css3-alt tech-icon tech-icon-8"></i>
+          <i class="fab fa-python tech-icon tech-icon-9"></i>
+          <i class="fab fa-docker tech-icon tech-icon-10"></i>
+          <i class="fab fa-aws tech-icon tech-icon-11"></i>
+          <i class="fab fa-github tech-icon tech-icon-12"></i>
+        </div>
+      </div>
+
       <div class="hero-container">
         <div class="hero-content">
           <h1 class="hero-title animate-text">
-            Hi, I'm <span class="highlight">Jubayer Ahmed</span>
+            Hi, I'm <span class="highlight">Jubayer Ahmed</span> 👋
           </h1>
-          <h2 class="hero-subtitle typing-text">
+          <h2 class="hero-subtitle">
             <i class="fab fa-react"></i>
-            Full-Stack Web Developer
+            <span class="typing-animation">Full Stack Web Developer</span>
           </h2>
           <p class="hero-description animate-text">
             ⚙️ Expert in Next.js, React, Node.js & MongoDB — building scalable,
             high-performance web apps ✨ <br />🧠 100+ LeetCode solved 🦾
             <br />⚔️ 500+ Codeforces challenges conquered 🔥
           </p>
-          <div class="hero-badge availability-badge pulse-icon">
+          <div class="hero-badge availability-badge pulse-icon hover-glow">
             <i
               class="fas fa-circle"
               style="color: #10b981; font-size: 0.7rem; margin-right: 10px"
@@ -150,13 +214,13 @@
             Available for exciting projects
           </div>
           <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">
+            <a href="#contact" class="btn btn-primary hover-lift magnetic">
               <i class="fas fa-paper-plane"></i>
               Get In Touch
             </a>
             <a
-              href="./assets/mycvvvv.pdf"
-              class="btn btn-secondary"
+              href="./assets/maincv.pdf"
+              class="btn btn-secondary hover-lift magnetic"
               id="download-resume"
             >
               <i class="fas fa-download"></i>
@@ -166,16 +230,16 @@
           <div class="social-links">
             <a
               href="https://www.linkedin.com/in/jubayer-ahmed26/"
-              class="social-link"
+              class="social-link hover-scale magnetic"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin"></i>
             </a>
             <a
               href="https://github.com/jubayer17"
-              class="social-link"
+              class="social-link hover-scale magnetic"
               aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
@@ -183,33 +247,32 @@
               <i class="fab fa-github"></i>
             </a>
             <a
-              href="mailto:jubayer17@cse.pstu.ac.bd"
-              class="social-link"
+              href="mailto:your.email@example.com"
+              class="social-link hover-scale magnetic"
               aria-label="Email"
             >
               <i class="fas fa-envelope"></i>
             </a>
-
             <a
-              href="https://www.facebook.com/jub0.ahmed/"
-              class="social-link"
-              aria-label="Facebook"
+              href="https://codeforces.com/profile/jubayer17"
+              class="social-link hover-scale magnetic"
+              aria-label="Codeforces"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-facebook-square"></i>
+              <i class="fas fa-code"></i>
             </a>
             <a
-              href="https://leetcode.com/u/Jubayer17/"
-              class="social-link"
-              aria-label="Facebook"
+              href="https://leetcode.com/jubayer17"
+              class="social-link hover-scale magnetic"
+              aria-label="LeetCode"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa-solid fa-code"></i>
+              <i class="fas fa-laptop-code"></i>
             </a>
           </div>
-          <div class="scroll-cue">
+          <div class="scroll-cue my-10">
             <span>Scroll to explore</span>
             <div class="scroll-arrow">
               <i class="fas fa-chevron-down"></i>
@@ -220,175 +283,186 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Section -->
+    <section id="about" class="about animate-on-scroll">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title animate-on-scroll-scale">
           <i class="fas fa-user-circle"></i>
           About Me
         </h2>
-        <div class="about-content">
-          <div class="about-image">
-            <img src="assets/me.jpg" alt="Jubayer" class="profile-img" />
+        <div class="about-content animate-on-scroll">
+          <div class="about-image animate-on-scroll-left">
+            <img
+              src="./assets/me.jpg"
+              alt="Jubayer Ahmed - Full Stack Developer"
+              class="profile-img hover-tilt"
+              loading="lazy"
+            />
             <div class="about-stats">
-              <div class="stat-item">
-                <i class="fas fa-calendar-alt"></i>
-                <span>1+ Years</span>
+              <div class="stat-item stagger-child hover-lift">
+                <i class="fas fa-code"></i>
+                1+ Years
               </div>
-              <div class="stat-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Barishal</span>
+              <div class="stat-item stagger-child hover-lift">
+                <i class="fas fa-project-diagram"></i>
+                10+ Projects
               </div>
-              <div class="stat-item">
-                <i class="fas fa-coffee"></i>
-                <span>Coffee Lover</span>
+              <div class="stat-item stagger-child hover-lift">
+                <i class="fas fa-trophy"></i>
+                500+ Problems
               </div>
             </div>
           </div>
-          <div class="about-text">
-            <p>
+          <div class="about-text animate-on-scroll-right">
+            <p class="fade-in-up stagger-1">
               👋 I'm a passionate MERN stack developer with 1+ years of
               experience building dynamic, scalable web applications. My
               expertise lies in creating seamless full-stack solutions with
               React, Next.js, Node.js, and MongoDB.
             </p>
-            <p>
+            <p class="fade-in-up stagger-2">
               🚀 I specialize in Next.js for server-side rendering, API routes,
               and performance optimization. From crafting responsive frontends
               to designing robust backend architectures, I deliver end-to-end
               solutions.
             </p>
-            <p>
+            <p class="fade-in-up stagger-3">
               ⚡ When I'm not coding, you'll find me exploring the latest in web
               development, contributing to open-source projects, or sharing
               knowledge with the developer community over a perfect cup of
               coffee.
             </p>
             <div class="about-highlights">
-              <div class="highlight-item">
-                <i class="fas fa-code"></i>
-                <span>Clean Code Advocate</span>
+              <div class="highlight-item stagger-child">
+                <i class="fas fa-check"></i>
+                MERN Stack Expert
               </div>
-              <div class="highlight-item">
-                <i class="fas fa-users"></i>
-                <span>Team Player</span>
+              <div class="highlight-item stagger-child">
+                <i class="fas fa-check"></i>
+                Next.js Specialist
               </div>
-              <div class="highlight-item">
-                <i class="fas fa-lightbulb"></i>
-                <span>Passionate Problem Solver</span>
+              <div class="highlight-item stagger-child">
+                <i class="fas fa-check"></i>
+                Problem Solver
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills animate-on-scroll">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title animate-on-scroll-scale">
           <i class="fas fa-tools"></i>
           Skills & Technologies
         </h2>
         <div class="skills-grid">
-          <div class="skill-category">
+          <div
+            class="skill-category animate-on-scroll-left hover-lift magnetic-card"
+          >
             <div class="skill-header">
               <i class="fas fa-paint-brush"></i>
               <h3>Frontend</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-item react">
+              <span class="skill-item react stagger-child hover-scale">
                 <i class="fab fa-react"></i>
                 React
               </span>
-              <span class="skill-item nextjs">
+              <span class="skill-item nextjs stagger-child hover-scale">
                 <i class="fas fa-infinity"></i>
                 Next.js
               </span>
-              <span class="skill-item javascript">
+              <span class="skill-item javascript stagger-child hover-scale">
                 <i class="fab fa-js-square"></i>
                 JavaScript ES6+
               </span>
-              <span class="skill-item typescript">
+              <span class="skill-item typescript stagger-child hover-scale">
                 <i class="fab fa-js-square"></i>
                 TypeScript
               </span>
-              <span class="skill-item html">
+              <span class="skill-item html stagger-child hover-scale">
                 <i class="fab fa-html5"></i>
                 HTML5 & CSS3
               </span>
-              <span class="skill-item tailwind">
+              <span class="skill-item tailwind stagger-child hover-scale">
                 <i class="fab fa-sass"></i>
                 Tailwind CSS
               </span>
             </div>
           </div>
-          <div class="skill-category">
+          <div
+            class="skill-category animate-on-scroll hover-lift magnetic-card"
+          >
             <div class="skill-header">
               <i class="fas fa-server"></i>
               <h3>Backend</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-item nodejs">
+              <span class="skill-item nodejs stagger-child hover-scale">
                 <i class="fab fa-node-js"></i>
                 Node.js
               </span>
-              <span class="skill-item express">
+              <span class="skill-item express stagger-child hover-scale">
                 <i class="fas fa-code"></i>
                 Express.js
               </span>
-              <span class="skill-item mongodb">
+              <span class="skill-item mongodb stagger-child hover-scale">
                 <i class="fas fa-leaf"></i>
                 MongoDB
               </span>
-              <span class="skill-item mongoose">
+              <span class="skill-item mongoose stagger-child hover-scale">
                 <i class="fas fa-database"></i>
                 Mongoose ODM
               </span>
-              <span class="skill-item inngest">
+              <span class="skill-item inngest stagger-child hover-scale">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 Inngest
               </span>
-              <span class="skill-item restapi">
+              <span class="skill-item restapi stagger-child hover-scale">
                 <i class="fas fa-plug"></i>
                 REST APIs
               </span>
-              <span class="skill-item graphql">
+              <span class="skill-item graphql stagger-child hover-scale">
                 <i class="fas fa-project-diagram"></i>
                 GraphQL
               </span>
             </div>
           </div>
-          <div class="skill-category">
+          <div
+            class="skill-category animate-on-scroll-right hover-lift magnetic-card"
+          >
             <div class="skill-header">
               <i class="fas fa-wrench"></i>
               <h3>Tools & Others</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-item git">
+              <span class="skill-item git stagger-child hover-scale">
                 <i class="fab fa-git-alt"></i>
                 Git
               </span>
-              <span class="skill-item docker">
+              <span class="skill-item docker stagger-child hover-scale">
                 <i class="fab fa-docker"></i>
                 Docker
               </span>
-              <span class="skill-item aws">
+              <span class="skill-item aws stagger-child hover-scale">
                 <i class="fab fa-aws"></i>
                 AWS
               </span>
-              <span class="skill-item vercel">
+              <span class="skill-item vercel stagger-child hover-scale">
                 <i class="fa-solid fa-server"></i>
                 Vercel
               </span>
-              <span class="skill-item figma">
+              <span class="skill-item figma stagger-child hover-scale">
                 <i class="fab fa-figma"></i>
                 Figma
               </span>
-              <span class="skill-item vscode">
+              <span class="skill-item vscode stagger-child hover-scale">
                 <i class="fas fa-code"></i>
                 VS Code
               </span>
-              <span class="skill-item postman">
+              <span class="skill-item postman stagger-child hover-scale">
                 <i class="fas fa-paper-plane"></i>
                 Postman
               </span>
@@ -399,28 +473,30 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects animate-on-scroll">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title animate-on-scroll-scale">
           <i class="fas fa-folder-open"></i>
           Featured Projects
         </h2>
         <div class="projects-grid">
-          <div class="project-card">
+          <div
+            class="project-card animate-on-scroll-left hover-lift magnetic-card"
+          >
             <div class="project-image">
-              <img src="assets/technestSS.png" alt="Weather Dashboard" />
+              <img src="assets/technestSS.png" alt="Tech-Nest Dashboard" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
                     href="https://quick-cart-ax1j.vercel.app/"
-                    class="project-link"
+                    class="project-link hover-scale"
                     aria-label="View live demo"
                   >
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                   <a
                     href="https://github.com/jubayer17"
-                    class="project-link"
+                    class="project-link hover-scale"
                     aria-label="View GitHub"
                   >
                     <i class="fab fa-github"></i>
@@ -429,7 +505,7 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">
+              <h3 class="project-title glow-text">
                 <i class="fas fa-shopping-cart"></i>
                 Tech-Nest
               </h3>
@@ -441,39 +517,35 @@
                 tech enthusiasts with the latest gadgets effortlessly.
               </p>
               <div class="project-tech">
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-infinity"></i>
                   Next.js
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fab fa-react"></i>
                   React
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-shield-halved"></i>
                   Clerk
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-screwdriver-wrench"></i>
-
                   Inngest
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-images"></i>
-
                   Cloudinary
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-server"></i>
-
                   Vercel
                 </span>
-
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fas fa-database"></i>
                   MongoDB
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-credit-card"></i>
                   Stripe
                 </span>
@@ -481,7 +553,7 @@
               <div class="project-buttons">
                 <a
                   href="https://quick-cart-ax1j.vercel.app/"
-                  class="btn btn-small btn-primary"
+                  class="btn btn-small btn-primary hover-lift"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -490,7 +562,7 @@
                 </a>
                 <a
                   href="https://github.com/jubayer17"
-                  class="btn btn-small btn-secondary"
+                  class="btn btn-small btn-secondary hover-lift"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -501,21 +573,29 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card animate-on-scroll hover-lift magnetic-card">
             <div class="project-image">
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link" aria-label="View live demo">
+                  <a
+                    href="https://edulecta.vercel.app/"
+                    class="project-link hover-scale"
+                    aria-label="View live demo"
+                  >
                     <i class="fas fa-external-link-alt"></i>
                   </a>
-                  <a href="#" class="project-link" aria-label="View GitHub">
+                  <a
+                    href="https://github.com/jubayer17/Edulecta"
+                    class="project-link hover-scale"
+                    aria-label="View GitHub"
+                  >
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">
+              <h3 class="project-title glow-text">
                 <i class="fas fa-tasks"></i>
                 Edulecta
               </h3>
@@ -527,41 +607,38 @@
                 to connect and grow effortlessly.
               </p>
               <div class="project-tech">
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fab fa-react"></i>
                   React.js
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fas fa-database"></i>
                   MongoDB
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fas fa-node-js"></i>
                   Node.js
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-shield-halved"></i>
                   Clerk
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-screwdriver-wrench"></i>
-
                   Inngest
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-images"></i>
-
                   Cloudinary
                 </span>
-                <span class="tech-tag">
+                <span class="tech-tag stagger-child hover-scale">
                   <i class="fa-solid fa-server"></i>
-
                   Vercel
                 </span>
               </div>
               <div class="project-buttons">
                 <a
-                  href="#"
+                  href="https://edulecta.vercel.app/"
                   class="btn btn-small btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -570,7 +647,7 @@
                   Live Demo
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/jubayer17/Edulecta"
                   class="btn btn-small btn-secondary"
                   target="_blank"
                   rel="noopener noreferrer"
