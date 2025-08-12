@@ -143,12 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.style.webkitBackdropFilter = "blur(10px)";
       }
 
-      // Hide/show navbar on scroll
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        navbar.style.transform = "translateY(-100%)";
-      } else {
-        navbar.style.transform = "translateY(0)";
-      }
+      // Always keep navbar visible
+      navbar.style.transform = "translateY(0)";
     }
     lastScrollTop = scrollTop;
   });

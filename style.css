@@ -319,7 +319,6 @@ h6 {
 .nav-link.active {
   color: var(--primary-color);
   transform: translateY(-2px);
-  text-shadow: 0 0 8px var(--primary-color);
 }
 
 .nav-link::after {
@@ -337,7 +336,6 @@ h6 {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
-  box-shadow: 0 0 8px var(--primary-color);
 }
 
 .theme-toggle {
