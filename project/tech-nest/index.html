@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Nest - Project Details | Jubayer Ahmed</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../project-details.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="../../index.html" class="hover-scale magnetic">
+            <i class="fas fa-code"></i>
+            Jubayer
+          </a>
+        </div>
+        <a href="../../index.html#projects" class="back-to-projects">
+          <i class="fas fa-arrow-left"></i>
+          Back to Projects
+        </a>
+      </div>
+    </nav>
+
+    <main class="project-details">
+      <!-- Project Title -->
+      <div class="project-title-section animate-fade-up">
+        <h1>Tech-Nest</h1>
+        <p class="subtitle">A Full-Featured Tech E-Commerce Platform</p>
+      </div>
+
+      <!-- Image Slider -->
+      <div class="swiper project-slider animate-fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../../assets/technestSS.png" alt="Tech-Nest Dashboard" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../../assets/ss.png" alt="Tech-Nest Products" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="content-grid">
+        <!-- Left Column - Main Content -->
+        <div class="main-content">
+          <!-- Project Overview -->
+          <section class="content-section animate-fade-up">
+            <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+            <p>
+              Tech Nest is a comprehensive e-commerce platform designed
+              specifically for tech enthusiasts. Built with modern web
+              technologies, it offers a seamless shopping experience with
+              features like real-time inventory management, secure payments, and
+              an intuitive admin dashboard.
+            </p>
+          </section>
+
+          <!-- Challenges Faced -->
+          <section class="content-section animate-fade-up">
+            <h2><i class="fas fa-mountain"></i> Challenges Faced</h2>
+            <div class="challenges-list">
+              <div class="challenge-item">
+                <h3>
+                  <i class="fas fa-tachometer-alt"></i> Performance Optimization
+                </h3>
+                <p>
+                  Implemented image optimization, lazy loading, and caching
+                  strategies to ensure fast page loads with large product
+                  catalogs.
+                </p>
+                <div class="solution">
+                  <strong>Solution:</strong> Utilized Next.js Image component
+                  and implemented efficient data fetching patterns.
+                </div>
+              </div>
+              <div class="challenge-item">
+                <h3><i class="fas fa-lock"></i> Payment Integration</h3>
+                <p>
+                  Implementing secure payment processing with real-time order
+                  updates and handling failed transactions.
+                </p>
+                <div class="solution">
+                  <strong>Solution:</strong> Integrated Stripe webhooks with
+                  proper error handling and recovery mechanisms.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Key Features -->
+          <section class="content-section animate-fade-up">
+            <h2><i class="fas fa-star"></i> Key Features</h2>
+            <div class="features-list">
+              <div class="feature-item">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                  <h3>Smart Shopping Cart</h3>
+                  <p>
+                    Real-time cart updates with persistent storage and seamless
+                    checkout flow
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <h3>Secure Authentication</h3>
+                  <p>
+                    Multi-provider authentication with role-based access control
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <div>
+                  <h3>Admin Dashboard</h3>
+                  <p>
+                    Comprehensive admin controls for product and order
+                    management
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column - Sidebar -->
+        <aside class="sidebar-content">
+          <!-- Project Links -->
+          <div class="sidebar-section animate-fade-up">
+            <h2><i class="fas fa-link"></i> Project Links</h2>
+            <div class="project-links">
+              <a
+                href="https://quick-cart-ax1j.vercel.app/"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a
+                href="https://github.com/jubayer17"
+                class="project-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="sidebar-section animate-fade-up">
+            <h2><i class="fas fa-layer-group"></i> Tech Stack</h2>
+            <div class="tech-stack">
+              <div class="tech-item">
+                <i class="fa-brands fa-react"></i>
+                <span>Next.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Stripe</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Cloudinary</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-lock"></i>
+                <span>Clerk Auth</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script>
+      // Preview Image Navigation
+      const previewBtns = document.querySelectorAll(".preview-nav-btn");
+      const previewScreens = document.querySelectorAll(".preview-screen");
+
+      previewBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons and screens
+          previewBtns.forEach((b) => b.classList.remove("active"));
+          previewScreens.forEach((s) => s.classList.remove("active"));
+
+          // Add active class to clicked button and corresponding screen
+          btn.classList.add("active");
+          const targetScreen = document.getElementById(btn.dataset.target);
+          targetScreen.classList.add("active");
+        });
+      });
+
+      // Navbar Scroll Effect
+      let lastScroll = 0;
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
